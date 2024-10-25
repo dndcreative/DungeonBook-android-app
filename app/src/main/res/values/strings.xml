@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DundgeonBook</string>
+    <string name="title_auth_and_register">AuthAndRegister</string>
+    <string name="title_skills">Skills</string>
+    <string name="title_equipment">Equipment</string>
+    <string name="title_ability">Ability</string>
+    <string name="title_available">Available</string>
+    <string name="title_points">points</string>
+    <string name="default_available_points_qty">15</string>
+    <string name="text_save">Save</string>
+    <string name="text_log_in">Log In</string>
+    <string name="hint_password">password</string>
+    <string name="hint_nickname">nickname</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_skill_points">Skill points</string>
+
+</resources>

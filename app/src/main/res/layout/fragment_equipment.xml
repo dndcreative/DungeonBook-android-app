@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_opacity_40_bgr"
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="16dp"
+    tools:context=".ui.main.EquipmentFragment">
+
+    <TextView
+        android:id="@+id/titleEquipment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/jolly_lodger"
+        android:text="@string/title_equipment"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <view
+        android:id="@+id/multilineEditText"
+        class="com.mkvsk.dundgeonbook.utils.LinedEditText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:fadeScrollbars="true"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:maxLines="50"
+        android:minLines="2"
+        android:scrollbars="vertical"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleEquipment" />
+
+    <!--    <androidx.appcompat.widget.AppCompatButton-->
+    <!--        android:id="@+id/btnSave"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:background="@drawable/btn_bgr"-->
+    <!--        android:enabled="false"-->
+    <!--        android:text="@string/text_save"-->
+    <!--        android:textAppearance="@style/txtAppCompatButton"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/multilineEditText"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
