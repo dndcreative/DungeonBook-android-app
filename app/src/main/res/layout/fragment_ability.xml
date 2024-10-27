@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:paddingHorizontal="8dp"
     android:paddingVertical="16dp"
-    tools:context=".ui.fragments.game.EquipmentFragment">
+    tools:context=".ui.fragments.game.AbilityFragment">
 
     <TextView
         android:id="@+id/titleEquipment"
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:fontFamily="@font/jolly_lodger"
-        android:text="@string/title_equipment"
+        android:text="@string/title_ability"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"

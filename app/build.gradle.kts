@@ -3,7 +3,9 @@ val jvmVersion = "1.8"
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    id("kotlin-kapt")
+//    id("kotlin-kapt")
+//    id ("com.google.devtools.ksp").version("1.9.0-1.0.13").apply(false)
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -39,11 +41,16 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
+    sourceSets["main"].java.srcDir("build/generated/ksp/debug/kotlin")
+    sourceSets["main"].java.srcDir("build/generated/ksp/release/kotlin")
+
 }
 
 dependencies {
 //    network
-    kapt ("androidx.lifecycle:lifecycle-compiler:2.6.1")
+//    kapt ("androidx.lifecycle:lifecycle-compiler:2.6.1")
+    ksp("androidx.room:room-compiler:2.4.3")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.15.+")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")

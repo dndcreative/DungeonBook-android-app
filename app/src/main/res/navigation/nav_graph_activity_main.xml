@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_equipment">
+    app:startDestination="@+id/navigation_skills">
 
     <fragment
         android:id="@+id/navigation_auth_and_register"
-        android:name="com.mkvsk.dundgeonbook.ui.authentication.AuthAndRegisterFragment"
+        android:name="com.mkvsk.dundgeonbook.ui.fragments.authentication.AuthAndRegisterFragment"
         android:label="@string/title_auth_and_register"
         tools:layout="@layout/fragment_auth_and_register">
 
@@ -18,14 +18,20 @@
 
     <fragment
         android:id="@+id/navigation_skills"
-        android:name="com.mkvsk.dundgeonbook.ui.main.SkillsFragment"
+        android:name="com.mkvsk.dundgeonbook.ui.fragments.game.SkillsFragment"
         android:label="@string/title_skills"
         tools:layout="@layout/fragment_skills" />
 
     <fragment
         android:id="@+id/navigation_equipment"
-        android:name="com.mkvsk.dundgeonbook.ui.main.EquipmentFragment"
+        android:name="com.mkvsk.dundgeonbook.ui.fragments.game.EquipmentFragment"
         android:label="@string/title_equipment"
+        tools:layout="@layout/fragment_equipment" />
+
+    <fragment
+        android:id="@+id/navigation_ability"
+        android:name="com.mkvsk.dundgeonbook.ui.fragments.game.Ab"
+        android:label="@string/title_ability"
         tools:layout="@layout/fragment_equipment" />
 
 </navigation>

@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/miniatureCharacterInfo"
-        android:name="com.mkvsk.dundgeonbook.ui.main.CharacterInfoFragment"
+        android:name="com.mkvsk.dundgeonbook.ui.fragments.game.CharacterInfoFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="visible"
@@ -29,7 +29,7 @@
 
     <fragment
         android:id="@+id/healthStats"
-        android:name="com.mkvsk.dundgeonbook.ui.main.HealthStatsFragment"
+        android:name="com.mkvsk.dundgeonbook.ui.fragments.game.HealthStatsFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="8dp"

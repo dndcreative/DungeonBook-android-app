@@ -1,4 +1,4 @@
-package com.mkvsk.dundgeonbook.ui.authentication
+package com.mkvsk.dundgeonbook.ui.fragments.authentication
 
 import android.os.Bundle
 import android.text.Editable

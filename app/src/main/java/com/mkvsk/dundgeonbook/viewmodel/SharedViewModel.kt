@@ -19,6 +19,13 @@ class SharedViewModel : ViewModel() {
         _isHealthStatsVisible.value = isVisible
     }
 
+    private val _isHealthViewsExpanded = MutableLiveData<Boolean>()
+    val isHealthViewsExpanded: LiveData<Boolean> get() = _isHealthViewsExpanded
+
+    fun setIsHealthViewsExpanded(isVisible: Boolean) {
+        _isHealthViewsExpanded.value = isVisible
+    }
+
     private val _isCharacterInfoVisible = MutableLiveData<Boolean>()
     val isCharacterInfoVisible: LiveData<Boolean> get() = _isCharacterInfoVisible
 

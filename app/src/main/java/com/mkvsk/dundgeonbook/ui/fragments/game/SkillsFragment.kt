@@ -1,4 +1,4 @@
-package com.mkvsk.dundgeonbook.ui.main
+package com.mkvsk.dundgeonbook.ui.fragments.game
 
 import android.os.Bundle
 import android.text.Editable
