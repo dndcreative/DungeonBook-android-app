@@ -1,6 +1,5 @@
 package com.mkvsk.dundgeonbook.ui.fragments.game
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -46,9 +45,6 @@ class HealthStatsFragment : Fragment() {
         letFlying(bat)
         sharedViewModel.setIsHealthViewsExpanded(true)
     }
-
-    @SuppressLint("Recycle")
-
 
     private fun initListeners() {
         binding.apply {

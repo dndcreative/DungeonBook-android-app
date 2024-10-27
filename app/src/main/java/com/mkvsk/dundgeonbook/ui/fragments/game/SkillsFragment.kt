@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.mkvsk.dundgeonbook.MainActivity
+import com.mkvsk.dundgeonbook.core.Character
 import com.mkvsk.dundgeonbook.core.Skill
 import com.mkvsk.dundgeonbook.databinding.FragmentSkillsBinding
 import com.mkvsk.dundgeonbook.ui.listeners.OnPointChangeListener
@@ -57,22 +58,6 @@ class SkillsFragment : Fragment(), OnPointChangeListener {
     }
 
     private fun setData() {
-        val skill0 = Skill(0, "Strength", 10)
-        val skill1 = Skill(1, "Perception", 10)
-        val skill2 = Skill(2, "Endurance", 10)
-        val skill3 = Skill(3, "Charisma", 10)
-        val skill4 = Skill(4, "Intelligence", 10)
-        val skill5 = Skill(5, "Agility", 10)
-        val skill6 = Skill(6, "Luck", 10)
-
-        skills.add(skill0)
-        skills.add(skill1)
-        skills.add(skill2)
-        skills.add(skill3)
-        skills.add(skill4)
-        skills.add(skill5)
-        skills.add(skill6)
-
         adapter.setData(skills)
         adapter.setAvailableQty(availablePoints)
     }
