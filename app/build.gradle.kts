@@ -3,8 +3,6 @@ val jvmVersion = "1.8"
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-//    id("kotlin-kapt")
-//    id ("com.google.devtools.ksp").version("1.9.0-1.0.13").apply(false)
     id("com.google.devtools.ksp")
 }
 
@@ -49,13 +47,14 @@ android {
 
 dependencies {
 //    network
-//    kapt ("androidx.lifecycle:lifecycle-compiler:2.6.1")
     ksp("androidx.room:room-compiler:2.4.3")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.15.+")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+//    di
+
 //    base
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

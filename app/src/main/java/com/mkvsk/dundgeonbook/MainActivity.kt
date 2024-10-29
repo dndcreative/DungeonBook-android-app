@@ -13,7 +13,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.mkvsk.dundgeonbook.databinding.ActivityMainBinding
 import com.mkvsk.dundgeonbook.viewmodel.SharedViewModel
 import com.mkvsk.dundgeonbook.viewmodel.SkillViewModel
-import com.mkvsk.dundgeonbook.viewmodel.UserViewModel
+import com.mkvsk.dundgeonbook.viewmodel.PlayerViewModel
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var userViewModel: UserViewModel
+    private lateinit var playerViewModel: PlayerViewModel
     private lateinit var skillViewModel: SkillViewModel
     private lateinit var sharedViewModel: SharedViewModel
 
@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun instantiateViewModels() {
-        userViewModel = ViewModelProvider(this)[UserViewModel::class.java]
+        playerViewModel = ViewModelProvider(this)[PlayerViewModel::class.java]
         skillViewModel = ViewModelProvider(this)[SkillViewModel::class.java]
         sharedViewModel = ViewModelProvider(this)[SharedViewModel::class.java]
     }

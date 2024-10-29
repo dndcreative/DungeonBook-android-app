@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class SharedViewModel : ViewModel() {
+
     private val _isNavViewVisible = MutableLiveData<Boolean>()
     val isNavViewVisible: LiveData<Boolean> get() = _isNavViewVisible
 

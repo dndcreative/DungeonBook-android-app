@@ -13,12 +13,12 @@ import com.mkvsk.dundgeonbook.R
 import com.mkvsk.dundgeonbook.databinding.FragmentAuthAndRegisterBinding
 import com.mkvsk.dundgeonbook.utils.Constants
 import com.mkvsk.dundgeonbook.viewmodel.AuthAndRegisterViewModel
-import com.mkvsk.dundgeonbook.viewmodel.UserViewModel
+import com.mkvsk.dundgeonbook.viewmodel.PlayerViewModel
 
 class AuthAndRegisterFragment : Fragment() {
     private var _binding: FragmentAuthAndRegisterBinding? = null
     private val binding get() = _binding!!
-    private lateinit var userViewModel: UserViewModel
+    private lateinit var playerViewModel: PlayerViewModel
     private lateinit var authAndRegisterViewModel: AuthAndRegisterViewModel
 
     private val login = ""
@@ -29,7 +29,7 @@ class AuthAndRegisterFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        userViewModel = ViewModelProvider(requireActivity())[UserViewModel::class.java]
+        playerViewModel = ViewModelProvider(requireActivity())[PlayerViewModel::class.java]
         authAndRegisterViewModel = ViewModelProvider(requireActivity())[AuthAndRegisterViewModel::class.java]
         _binding = FragmentAuthAndRegisterBinding.inflate(inflater, container, false)
         return binding.root

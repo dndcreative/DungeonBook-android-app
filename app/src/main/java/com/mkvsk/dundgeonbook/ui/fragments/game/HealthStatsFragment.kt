@@ -11,14 +11,14 @@ import com.mkvsk.dundgeonbook.databinding.FragmentHealthStatsBinding
 import com.mkvsk.dundgeonbook.utils.MyAnimation.letFlying
 import com.mkvsk.dundgeonbook.utils.MyAnimation.startFlightAnimation
 import com.mkvsk.dundgeonbook.viewmodel.SharedViewModel
-import com.mkvsk.dundgeonbook.viewmodel.UserViewModel
+import com.mkvsk.dundgeonbook.viewmodel.PlayerViewModel
 
 class HealthStatsFragment : Fragment() {
 
     private var _binding: FragmentHealthStatsBinding? = null
     private val binding get() = _binding!!
 
-    private val userViewModel by lazy { ViewModelProvider(this)[UserViewModel::class.java] }
+    private val playerViewModel by lazy { ViewModelProvider(this)[PlayerViewModel::class.java] }
     private val sharedViewModel by lazy { ViewModelProvider(this)[SharedViewModel::class.java] }
 
     private var healthPointsQty = 0
@@ -48,8 +48,8 @@ class HealthStatsFragment : Fragment() {
 
     private fun initListeners() {
         binding.apply {
-            btnMinus.setOnClickListener { userViewModel.setHealthPoints(healthPointsQty.dec()) }
-            btnPlus.setOnClickListener { userViewModel.setHealthPoints(healthPointsQty.inc()) }
+            btnMinus.setOnClickListener { playerViewModel.setHealthPoints(healthPointsQty.dec()) }
+            btnPlus.setOnClickListener { playerViewModel.setHealthPoints(healthPointsQty.inc()) }
             btnExpand.setOnClickListener {
                 sharedViewModel.setIsHealthViewsExpanded(
                     !sharedViewModel.isHealthViewsExpanded.value!!
@@ -59,10 +59,10 @@ class HealthStatsFragment : Fragment() {
     }
 
     private fun initObservers() {
-        userViewModel.healthPoints.observe(viewLifecycleOwner) {
-            healthPointsQty = it
-            binding.tvCurrentHealthPoints.text = healthPointsQty.toString()
-        }
+//        playerViewModel.healthPoints.observe(viewLifecycleOwner) {
+//            healthPointsQty = it
+//            binding.tvCurrentHealthPoints.text = healthPointsQty.toString()
+//        }
 
         sharedViewModel.isHealthViewsExpanded.observe(viewLifecycleOwner) {
             expandViews(it)

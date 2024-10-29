@@ -10,14 +10,13 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.mkvsk.dundgeonbook.MainActivity
-import com.mkvsk.dundgeonbook.core.Character
 import com.mkvsk.dundgeonbook.core.Skill
 import com.mkvsk.dundgeonbook.databinding.FragmentSkillsBinding
 import com.mkvsk.dundgeonbook.ui.listeners.OnPointChangeListener
 import com.mkvsk.dundgeonbook.viewmodel.SharedViewModel
 import com.mkvsk.dundgeonbook.ui.adapters.SkillAdapter
 import com.mkvsk.dundgeonbook.viewmodel.SkillViewModel
-import com.mkvsk.dundgeonbook.viewmodel.UserViewModel
+import com.mkvsk.dundgeonbook.viewmodel.PlayerViewModel
 
 class SkillsFragment : Fragment(), OnPointChangeListener {
 
@@ -25,7 +24,7 @@ class SkillsFragment : Fragment(), OnPointChangeListener {
     private var _binding: FragmentSkillsBinding? = null
     private val binding get() = _binding!!
 
-    private val userViewModel by lazy { ViewModelProvider(this)[UserViewModel::class.java] }
+    private val playerViewModel by lazy { ViewModelProvider(this)[PlayerViewModel::class.java] }
     private val skillViewModel by lazy { ViewModelProvider(this)[SkillViewModel::class.java] }
     private lateinit var sharedViewModel: SharedViewModel
 

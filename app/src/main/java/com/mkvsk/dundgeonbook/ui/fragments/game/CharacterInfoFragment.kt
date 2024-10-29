@@ -7,14 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.mkvsk.dundgeonbook.databinding.FragmentCharacterInfoBinding
-import com.mkvsk.dundgeonbook.viewmodel.UserViewModel
+import com.mkvsk.dundgeonbook.viewmodel.PlayerViewModel
 
 class CharacterInfoFragment: Fragment() {
 
     private var _binding: FragmentCharacterInfoBinding? = null
     private val binding get() = _binding!!
 
-    private val userViewModel by lazy { ViewModelProvider(this)[UserViewModel::class.java] }
+    private val playerViewModel by lazy { ViewModelProvider(this)[PlayerViewModel::class.java] }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

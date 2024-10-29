@@ -6,10 +6,6 @@ import androidx.lifecycle.ViewModel
 
 class CharacterViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "Hewix"
-    }
-    val text: LiveData<String> = _text
 
     private val _healthPoints = MutableLiveData<Int>(15)
     val healthPoints: LiveData<Int> get() = _healthPoints
