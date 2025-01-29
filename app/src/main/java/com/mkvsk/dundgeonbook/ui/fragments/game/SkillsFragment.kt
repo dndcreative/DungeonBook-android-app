@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.mkvsk.dundgeonbook.MainActivity
-import com.mkvsk.dundgeonbook.core.Skill
+import com.mkvsk.dundgeonbook.model.Skill
 import com.mkvsk.dundgeonbook.databinding.FragmentSkillsBinding
 import com.mkvsk.dundgeonbook.ui.listeners.OnPointChangeListener
 import com.mkvsk.dundgeonbook.viewmodel.SharedViewModel

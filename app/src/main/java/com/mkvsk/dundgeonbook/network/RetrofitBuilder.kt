@@ -1,10 +1,10 @@
 package com.mkvsk.dundgeonbook.network
 
-import com.mkvsk.dundgeonbook.network.services.AbilitiesService
-import com.mkvsk.dundgeonbook.network.services.CharacterService
-import com.mkvsk.dundgeonbook.network.services.EquipmentService
-import com.mkvsk.dundgeonbook.network.services.PlayerService
-import com.mkvsk.dundgeonbook.network.services.SkillService
+import com.mkvsk.dundgeonbook.network.api.AbilitiesService
+import com.mkvsk.dundgeonbook.network.api.CharacterService
+import com.mkvsk.dundgeonbook.network.api.EquipmentService
+import com.mkvsk.dundgeonbook.network.api.PlayerService
+import com.mkvsk.dundgeonbook.network.api.SkillService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

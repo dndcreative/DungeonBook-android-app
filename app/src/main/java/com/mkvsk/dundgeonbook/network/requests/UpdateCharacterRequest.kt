@@ -1,8 +1,8 @@
 package com.mkvsk.dundgeonbook.network.requests
 
-import com.mkvsk.dundgeonbook.core.Ability
-import com.mkvsk.dundgeonbook.core.Equipment
-import com.mkvsk.dundgeonbook.core.Skill
+import com.mkvsk.dundgeonbook.model.Ability
+import com.mkvsk.dundgeonbook.model.Equipment
+import com.mkvsk.dundgeonbook.model.Skill
 
 class UpdateCharacterRequest(
     private var id: Int = 0,

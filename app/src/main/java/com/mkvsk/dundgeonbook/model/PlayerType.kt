@@ -1,4 +1,4 @@
-package com.mkvsk.dundgeonbook.core
+package com.mkvsk.dundgeonbook.model
 
 enum class PlayerType {
     PLAYER,

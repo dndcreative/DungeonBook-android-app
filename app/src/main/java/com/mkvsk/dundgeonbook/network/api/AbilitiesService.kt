@@ -1,6 +1,6 @@
-package com.mkvsk.dundgeonbook.network.services
+package com.mkvsk.dundgeonbook.network.api
 
-import com.mkvsk.dundgeonbook.core.Ability
+import com.mkvsk.dundgeonbook.model.Ability
 import com.mkvsk.dundgeonbook.network.requests.UpdateAbilityRequest
 import retrofit2.Call
 import retrofit2.http.Body

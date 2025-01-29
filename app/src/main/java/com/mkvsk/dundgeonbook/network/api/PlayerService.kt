@@ -1,6 +1,6 @@
-package com.mkvsk.dundgeonbook.network.services
+package com.mkvsk.dundgeonbook.network.api
 
-import com.mkvsk.dundgeonbook.core.Player
+import com.mkvsk.dundgeonbook.model.Player
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
